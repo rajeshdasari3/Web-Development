@@ -1,0 +1,23 @@
+body {
+    background: #000;
+    color: whitesmoke;
+}
+
+a {
+    color: lightblue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:active, a:hover {
+    color: darkblue;
+}
+
+table, tr, th, td,caption {
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}

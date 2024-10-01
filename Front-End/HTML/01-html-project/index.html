@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Rajesh Dasari" />
+    <meta
+      name="description"
+      content="This page contains all the things I want to do in this Year."
+    />
+    <title>My first webpage</title>
+    <link rel="shortcut icon" href="angrydevil.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My Goals for the Year</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learn HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a Vacation</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <article id="html">
+        <h2>I'm ready to learn HTML</h2>
+        <p>This is my first webpage</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/html_logo_300x300.png"
+            alt="HTML5 Logo"
+            title="I am learning HTML5"
+            width="300"
+            height="300"
+          />
+          <figure>
+            <figcaption>An Example of HTML5 code</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how:</p>
+          <ol>
+            <li>...I learn more about web dev.</li>
+            <li>...I plan out my Schedule.</li>
+            <li>
+              ...I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org">MDN</a></abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark> number of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8 am</time> and I write code
+                for <mark><time datetime="PT4H">4 hours</time></mark> every
+                morning.
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time> -
+                  <time datetime="12:00">12am</time>
+                </td>
+                <td>write code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="12:00">12pm</time> -
+                  <time datetime="13:00">1pm</time>
+                </td>
+                <td>eat lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="13:00">1pm</time> -
+                  <time datetime="17:00">5pm</time>
+                </td>
+                <td>study other cources</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">Other times</td>
+                <td>free time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  And that's what I do every day. Just eat, sleep and code.
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+      <hr />
+
+      <article id="vacation">
+        <h2>I'm also planning a vacation</h2>
+        <p>
+          I've been low on motivation to work and <em>really need a break</em>
+        </p>
+        <p>I want to go to Beach.</p>
+        <section>
+          <h3>Places I'd like to visit.</h3>
+          <ul>
+            <li>
+              <p>I heard good things about Rishikonda Beach.</p>
+              <figure>
+                <img
+                  src="img/rishikonda_Beach.jpg"
+                  alt="Rishikonda Beach Image"
+                  title="I wan to visit rishikonda_Beach"
+                  width="415"
+                  height="270"
+                  loading="lazy"
+                />
+                <figcaption>Rishikonda Beach</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I here good things about going here</p>
+              <address>
+                Rishikonda is Beach Rd <br />
+                Rushikonda Bheemili, Visakhapatnam <br />
+                Andhra Pradesh, 530045, India.
+              </address>
+              <figure>
+                <img
+                  src="img/vacation.jpg"
+                  alt="rishikonda beach vacation imaage"
+                  width="400"
+                  height="267"
+                />
+                <figcaption>Rishikonda beach vacation Image</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- TODO: Add More Places -->
+        <section>
+          <h3>Places I want to avoid.</h3>
+          <dl>
+            <dt>popultaed areas</dt>
+            <dd>I'm not used to large number of people.</dd>
+            <dt>Forests</dt>
+            <dd>
+              I'm afraid of wild animals mainly <strong>poisonous ones</strong>.
+            </dd>
+          </dl>
+        </section>
+      </article>
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I would really like to here from you!</p>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+              <label for="firstName">First Name:</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Jane"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+            <p>
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Doe"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="your secret"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="9999999999"
+                pattern="[0-9]{10}"
+                required
+              />
+            </p>
+            <p>
+              <label for="decade">Favourite Decade:</label>
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1950"
+                max="2024"
+                step="10"
+                value="1980"
+              />
+            </p>
+            <p>
+              <label for="coffee">Favourite Coffee:</label>
+              <select name="coffee" id="coffee">
+                <optgroup label="Coffees">
+                  <option value="regular coffee">Regular coffee</option>
+                  <option value="iced coffee">Iced Coffee</option>
+                </optgroup>
+                <optgroup label="Expresso Drinks">
+                  <option value="latte" selected>Latte</option>
+                  <option value="cappuccino">Cappuccino</option>
+                  <option value="americano">Americano</option>
+                </optgroup>
+                <option value="other">Other</option>
+              </select>
+            </p>
+            <!-- <label for="coffee">Favourite Coffee:</label>
+        <input type="text" name="coffee" id="coffee" list="coffee-list" />
+        <datalist id="coffee-list">
+          <option value="coffee"></option>
+          <option value="latte"></option>
+          <option value="espresso"></option>
+          <option value="cortado"></option>
+          <option value="americano"></option>
+          <option value="other"></option>
+        </datalist> -->
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>What is your favourite food?</legend>
+            <p>
+              <input type="radio" name="food" id="biryani" value="biryani" />
+              <label for="food">Biryani</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="food"
+                id="masala dosa"
+                value="masala dosa"
+              />
+              <label for="food">Masala Dosa</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="food"
+                id="gulab jamun"
+                value="gulab jamun"
+              />
+              <label for="food">Gulab Jamun</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="food">Other</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+              <input type="checkbox" name="pet" id="dog" value="dog" />
+              <label for="pet">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pet" id="cat" value="cat" />
+              <label for="pet">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pet" id="bird" value="bird" />
+              <label for="pet">Bird</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pet" id="fish" value="fish" />
+              <label for="pet">Fish</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="pet"
+                id="otherPet"
+                value="otherPet"
+              />
+              <label for="pet">Other</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Send Me A Note</legend>
+            <label for="message">Your Message</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              rows="8"
+              cols="30"
+              placeholder="Type your message here..."
+            ></textarea>
+          </fieldset>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/get"
+            formmethod="get"
+          >
+            Submit
+          </button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Post
+          </button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy;<a href="aboutme.html">Rajesh Dasari</a> &gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to Top </a>
+      </p>
+    </footer>
+  </body>
+</html>
